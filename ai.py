@@ -13,8 +13,12 @@ def evaluate_window(window, piece):
     elif window.count(piece) == 2 and window.count(Empty) == 2:
         score += 2
 
-    if window.count(opp_piece) == 3 and window.count(Empty) == 1:
+    if window.count(opp_piece) == 4:
+        score -= 100
+    elif window.count(opp_piece) == 3 and window.count(Empty) == 1:
         score -= 4
+    elif window.count(opp_piece) == 2 and window.count(Empty) == 2:
+        score -= 2
 
     return score
 
