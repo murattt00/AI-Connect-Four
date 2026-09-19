@@ -4,7 +4,7 @@ Row_count = 6
 Column_count = 7
 
 Player_piece = 1
-Ai_piece = 2
+Ai_piece = -1
 Empty = 0
 
 def create_board():
